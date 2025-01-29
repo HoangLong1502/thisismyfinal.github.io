@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Shop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        
+        <div class="logo">CAMERA</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>Shot if u want to capture the moment</h1>
+                <p>we have all your price or needs just let us know what do you want and we will help u with all of heart</p>
+                <button>Buy now</button>
+                <p>1. CyberShot</p>
+                <p>2. DSLR camera</p>
+                <p>3. Mirrorless camera</p>
+                <p>4. other brand</p>
+                <img src="https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="camera 1">
+                <img src="https://images.pexels.com/photos/1595241/pexels-photo-1595241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="camera 2">
+                <img src="https://images.pexels.com/photos/614077/pexels-photo-614077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="camera 3">
+
+                
+            </div>
+            <div class="column-right">
+                <button id="backToTop" title="Back to Top">back to top</button>
+                <script>
+                    let mybutton = document.getElementById("backToTop");
+                    
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+                    
+                    mybutton.onclick = function() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                    </script>
+            </div>
+                
+        </div>
+        
+    </section>
+    
+</body>
+</html>
